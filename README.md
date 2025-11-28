@@ -63,7 +63,7 @@ conda install numpy pandas matplotlib scikit-learn openpyxl ipykernel
 
 ## 第三部分：安装 Visual Studio Code (VS Code)
 ### 1. 下载与安装
-- 官网下载：[code.visualstudio.com](code.visualstudio.com)
+- 官网下载：[Visual studio code](https://code.visualstudio.com/)
 
 - 安装设置 (提升效率的关键)： 在安装过程中，务必勾选以下选项，以便直接通过右键打开项目：
 
