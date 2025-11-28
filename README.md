@@ -36,10 +36,15 @@ Miniconda 是 Anaconda 的精简版，只包含最基础的 Python 和 Conda 管
 在开始菜单搜索并打开 **"Anaconda Prompt (Miniconda3)"** (黑色终端窗口)，**逐行复制**以下命令并回车执行：
 
 ```bash
-conda config --add channels [https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/](https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/)
-conda config --add channels [https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/](https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/)
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+```
+```bash
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/
+```
+```bash
 conda config --set show_channel_urls yes
 ```
+如果源添加错了，可以用`conda config --remove-key channels`及时移除然后重新设置。
 
 ### 2. 创建通用的科研环境 (Research)
 我们不建议直接在 `base` 环境中安装库。建立一个独立的 `research` 环境用于日常数据处理。
